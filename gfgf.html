@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <title> Bingo Number Generator </title>
+    <body>
+    <h1> Bingo Number Generator </h1>
+    <br>
+        
+<table>
+    <tbody>
+      <tr class= "row">
+        <td id = "num1"></td>
+        <td id = "num2"></td>
+        <td id = "num3"></td>
+        <td id = "num4"></td>
+        <td id = "num5"></td>
+      </tr>
+      <tr class = "row">
+        <td id = "num6"></td>
+        <td id = "num7"></td>
+        <td id = "num8"></td>
+        <td id = "num9"></td>
+        <td id = "num10"></td>
+      </tr>
+      <tr class = "row">
+        <td id = "num11"></td>
+        <td id = "num12"></td>
+        <td id = "num13"></td>
+        <td id = "num14"></td>
+        <td id = "num15"></td>
+      </tr>
+      <tr class = "row">
+        <td id = "num16"></td>
+        <td id = "num17"></td>
+        <td id = "num18"></td>
+        <td id = "num19"></td>
+        <td id = "num20"></td>
+      </tr>
+      <tr class = "row">
+        <td id = "num21"></td>
+        <td id = "num22"></td>
+        <td id = "num23"></td>
+        <td id = "num24"></td>
+        <td id = "num25"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+<script>
+    function getRandomNumber(min, max) {
+return Math.floor(Math.random() * (max - min) ) + min;
+}
+nums = [];
+
+while (nums.length < 25) {
+k = getRandomNumber(1,36)
+if (nums.includes(k)){
+continue;
+}
+nums.push(k)
+}
+document.getElementById("num1").innerText = nums[0];
+document.getElementById("num2").innerText = nums[1];
+document.getElementById("num3").innerText = nums[2];
+document.getElementById("num4").innerText = nums[3];
+document.getElementById("num5").innerText = nums[4];
+document.getElementById("num6").innerText = nums[5];
+document.getElementById("num7").innerText = nums[6];
+document.getElementById("num8").innerText = nums[7];
+document.getElementById("num9").innerText = nums[8];
+document.getElementById("num10").innerText = nums[9];
+document.getElementById("num11").innerText = nums[10];
+document.getElementById("num12").innerText = nums[11];
+document.getElementById("num13").innerText = "FREE"
+document.getElementById("num14").innerText = nums[13];
+document.getElementById("num15").innerText = nums[14];
+document.getElementById("num16").innerText = nums[15];
+document.getElementById("num17").innerText = nums[16];
+document.getElementById("num18").innerText = nums[17];
+document.getElementById("num19").innerText = nums[18];
+document.getElementById("num20").innerText = nums[19];
+document.getElementById("num21").innerText = nums[20];
+document.getElementById("num22").innerText = nums[21];
+document.getElementById("num23").innerText = nums[22];
+document.getElementById("num24").innerText = nums[23];
+document.getElementById("num25").innerText = nums[24];
+
+
+</script>
+<style>
+table  {
+border: collapse;
+border: 2px solid black;
+font-size: 50px;
+width: 50%;
+height: 200px;
+text-align: center;
+}
+td {
+border: 2px solid black;
+}
+
+
+</style>
+  </html>
